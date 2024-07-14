@@ -21,7 +21,7 @@ const RegisterPage = () => {
 
     console.log("Email submitted:", email);
     try {
-      const response = await axios.post(BASE_URL + "/register", {
+      const response = axios.post(BASE_URL + "/register", {
         email: email,
       });
       console.log("Response:", response.data);
@@ -43,7 +43,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post(BASE_URL + "/random", {
+      const response = axios.post(BASE_URL + "/random", {
         email: email,
       });
       navigate(`/random`);
