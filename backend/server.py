@@ -57,7 +57,7 @@ def getRandomProblem():
 
 def start_scheduler():
     scheduler.add_job(
-        id="Scheduled Task", func=scheduled_task, trigger="cron", hour=21, minute=10
+        id="Scheduled Task", func=scheduled_task, trigger="cron", hour=21, minute=20
     )
     scheduler.start()
 
